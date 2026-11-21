@@ -2,7 +2,7 @@
 
 Làm cá nhân, không mở slide, khoảng 10 phút. Ghi đáp án ngay dưới mỗi câu.
 
-**Họ tên:** Nguyễn Văn Nhật · **Mã:** G02
+**Họ tên:** Nguyễn Văn Nhất · **Mã:** G02
 
 ---
 
@@ -30,6 +30,3 @@ Số khung = 314 − 240 + 1 = 75 khung. Thời gian = 75 / 30 = 2.50 s.
 - E. Cảnh cabin cố định nên không cần guideline hay QC riêng.
 
 Đáp án: **A, B, C**
-
-- D sai: vật trong cabin ở **gần** camera và chiếm phần lớn khung hình. "Xa, nhỏ, nhiều vật" là đặc điểm của camera ngoài xe.
-- E sai: cabin cần guideline riêng (ghế theo xe, trái/phải theo người, IR, che khuất), và hôm nay có rất nhiều bất đồng phải QC.
