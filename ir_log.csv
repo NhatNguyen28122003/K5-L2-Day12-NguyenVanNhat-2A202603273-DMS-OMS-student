@@ -1,0 +1,12 @@
+﻿frame_id,source,phenomenon,affected_field,effect_on_label
+S04_ir,IR_sim,"IR-sim chỉ có độ sáng, mất màu: bên trong ghế trẻ em lẫn với màu vải ghế, khó tách vật bên trong khỏi lòng ghế",child_seat.occupied,"S04_rgb ghi unknown nhưng S04_ir ghi yes; phải gán theo đúng ảnh đang xem, không chép từ ảnh kia (4.4-1). Không rõ thì unknown"
+S07_ir,IR_sim,"Mép vật (hộp) cạnh người ngồi giữa lẫn vào ghế khi mất màu; box trên ir rộng 174 px còn trên rgb 110 px",object (box),"Box dễ bị kéo lỏng trên ir; căn mép theo hình dạng vật, đối chiếu lại với box rgb (4.4-5)"
+S01_ir,IR_sim,"Mép trái của ghế em bé (infant_seat) có độ sáng gần giống nền ghế sau, không có màu để tách biên",infant_seat (box),"Mép box lệch khoảng 40 px so với rgb (IoU 0.80); phải tăng contrast hiển thị trên CVAT rồi căn lại"
+S03_ir;S06_ir,IR_sim,"Không phân biệt được vật bằng màu (hộp và túi cùng mức xám)",object.type,"Chỉ chọn type theo hình dạng: S03 cạnh thẳng nên box, S06 mềm có quai nên bag; không chắc thì other (4.4-4)"
+S01_ir;S07_ir,IR_sim,"Tay hành khách có độ tương phản khác với rgb; trên S07 thấy rõ tay trên ir nhưng bản rgb không gán tay",hand (box),"Gán theo những gì thấy trên từng ảnh; ghi chú việc hand trên ảnh OMS để hỏi coach"
+D04,real_IR,"Đốm phản xạ đèn LED NIR trên cả hai tròng kính cận che mắt",eye_left; eye_right; face13 left_eye_* / right_eye_*,"Cả hai mắt unknown, không ghi closed; 8 điểm mắt bật cờ occluded"
+D06,real_IR,"Kính cận phản xạ LED NIR, không thấy khe mắt sau tròng",eye_left; eye_right; face13 *_eye_*,"Hai mắt unknown, 8 điểm mắt có cờ occluded; glasses vẫn là clear vì thấy gọng"
+D01,real_IR,"Phản xạ trên tròng kính phía mắt phải; mắt trái vẫn thấy khe mắt",eye_right; face13 right_eye_*,"eye_left = open, eye_right = unknown; không suy mắt phải từ mắt trái (4.4-1)"
+D03,real_IR,"Góc mặt nghiêng cộng phản xạ kính làm mờ khóe ngoài mắt phải và khóe miệng phải",eye_right; face13 right_eye_outer; mouth_right,"eye_right = unknown; điểm bị che có cờ occluded, không đặt điểm cho đủ"
+D02,real_IR,"Điện thoại màu tối gần như cùng độ sáng với tóc và tay trên NIR, bị ngón tay che một phần",phone (box); phone.state,"Chỉ vẽ vì thấy được cạnh máy; box có cờ occluded, state = held"
+D01-D06,real_IR,"Camera tự chiếu đèn NIR nên độ sáng ảnh gần như không đổi, không biết ngày hay đêm",frame_meta.light,"light = unknown cho cả 6 ảnh D##"
